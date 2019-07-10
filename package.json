@@ -1,23 +1,23 @@
 {
     "name": "vscode-solution-explorer",
-    "displayName": "vscode-solution-explorer",
-    "description": "Visual Studio .sln file explorer for Visual Studio Code",
-    "version": "0.3.4",
+    "displayName": "vscode-solution-explorer-jesperbjensen",
+    "description": "Visual Studio .sln file explorer for Visual Studio Code (Fork)",
+    "version": "0.4.0",
     "license": "CC-BY-SA-4.0",
-    "publisher": "fernandoescolar",
+    "publisher": "jesperbjensen",
     "icon": "images/icon.png",
     "author": {
-        "email": "f.escolar@hotmail.com",
-        "name": "Fernando Escolar",
-        "url": "http://fernandoescolar.github.io"
+        "email": "jesperbjensen@gmail.com",
+        "name": "Jesper Blad Jensen",
+        "url": "https://github.com/jesperbjensen"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fernandoescolar/vscode-solution-explorer"
+        "url": "https://github.com/jesperbjensen/vscode-solution-explorer"
     },
     "bugs": {
-        "url": "https://github.com/fernandoescolar/vscode-solution-explorer/issues",
-        "email": "f.escolar@hotmail.com"
+        "url": "https://github.com/jesperbjensen/vscode-solution-explorer/issues",
+        "email": "jesperbjensen@gmail.com"
     },
     "engines": {
         "vscode": "^1.27.0"
