@@ -1,4 +1,5 @@
 import * as convert from "xml-js";
+import * as eol from "eol";
 import * as config from "../SolutionExplorerConfiguration";
 
 const readOptions: convert.Options.XML2JSON = {
@@ -7,7 +8,7 @@ const readOptions: convert.Options.XML2JSON = {
 
 const writeOptions: convert.Options.JS2XML = {
     compact: false,
-    spaces: 2
+    spaces: 2,
 };
 
 export function ParseToJson(content: string): Promise<any> {
@@ -25,5 +26,7 @@ export function ParseToXml(content: any): Promise<string> {
         let re = /([A-Za-z0-9_\"]+)\/\>/g;
         result = result.replace(re,"$1 />");
     }
+    result = eol.crlf(result);
+    
     return Promise.resolve(result);
 }

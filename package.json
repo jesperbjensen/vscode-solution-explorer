@@ -2,7 +2,7 @@
     "name": "vscode-solution-explorer",
     "displayName": "vscode-solution-explorer-jesperbjensen",
     "description": "Visual Studio .sln file explorer for Visual Studio Code (Fork)",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "license": "CC-BY-SA-4.0",
     "publisher": "jesperbjensen",
     "icon": "images/icon.png",
@@ -965,6 +965,7 @@
     },
     "dependencies": {
         "clipboardy": "^1.2.3",
+        "eol": "^0.9.1",
         "handlebars": "^4.0.12",
         "iconv-lite": "^0.4.24",
         "node-uuid": "^1.4.8",
