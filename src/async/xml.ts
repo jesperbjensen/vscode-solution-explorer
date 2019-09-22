@@ -1,6 +1,7 @@
 import * as convert from "xml-js";
 import * as eol from "eol";
 import * as config from "../SolutionExplorerConfiguration";
+import { getLineEndings } from "../SolutionExplorerConfiguration";
 
 const readOptions: convert.Options.XML2JSON = {
     compact: false
@@ -26,7 +27,10 @@ export function ParseToXml(content: any): Promise<string> {
         let re = /([A-Za-z0-9_\"]+)\/\>/g;
         result = result.replace(re,"$1 />");
     }
-    result = eol.crlf(result);
-    
+    // By default the XML module will output files with LF.
+    // We will convert that to CRLF if enabled.
+    if(getLineEndings() == "crlf") {
+        result = eol.crlf(result);
+    }
     return Promise.resolve(result);
 }

@@ -940,6 +940,15 @@
                     "type": "boolean",
                     "default": true,
                     "description": "Ask to create the solution template folder when none exists."
+                },
+                "vssolution.lineEndings": {
+                    "type": "string",
+                    "enum": [
+                        "lf",
+                        "crlf"
+                    ],
+                    "default": "lf",
+                    "description": "Controls line endings of solution and project files."
                 }
             }
         }
